@@ -1,0 +1,26 @@
+router.post("/insertpatient",function(req,res){
+user_name=req.body.user_name;
+last_name=req.body.last_name;
+user_pwd=req.body.user_pwd;
+user_email=req.body.user_email;ALTER TABLE tbl_health_practitioner_registration ADD COLUMN userid INT AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE tbl_health_practitioner_registration MODIFY COLUMN userid INT AUTO_INCREMENT PRIMARY KEY;
+ALTER TABLE tbl_health_practitioner_registration MODIFY COLUMN userid INT AUTO_INCREMENT;
+selectquery="select * from tbl_metrics_calculation_result where Userid='"+usersessiondata+"'";
+bmiquery="update  tbl_metrics_calculation_result set bmi='"+parseInt(bmicondition)+"' where Userid='"+usersessiondata+"'";
+delete from tbl_health_practitioner_registration where userid="2";
+
+Your BMI indicates overweight, but small lifestyle changes can make a big difference!
+
+Your BMI shows obesity, which means it's time to focus on healthier habits for better well-being.
+Your BMI indicates extreme obesity, signaling the critical importance of immediate attention to health and lifestyle changes
+   <% obj.data.forEach((result)=>{%>
+                <tr>
+               <td  id="tblbody"><%= result.username%></td>
+               <td id="tblbody"><%= result.email%></td></tr>
+            <%});
+             %>
+
+              {%><%}
+
+
+               obj={data:result}

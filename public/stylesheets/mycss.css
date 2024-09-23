@@ -1,0 +1,48 @@
+.column
+{
+    float:left;
+    width:20%;
+    
+    padding-left:5px;
+    }
+.maincolumn
+{
+    width:100%;
+    padding-left:5px;
+    padding-left:40%;
+    background-color:#575654;
+    color:#ffffff;
+    }
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+    padding-top:5px;
+    }
+.vcolumn
+{
+    float:left;
+    width:50%;
+    
+    padding-left:5px;
+    }
+.vrow:after{
+    content:"";
+    display:table;
+    clear:both;
+    padding-top:5px;
+    }
+
+.scolumn
+{
+    float:left;
+    width:30%;
+    
+    padding-left:5px;
+    }
+.srow:after{
+    content:"";
+    display:table;
+    clear:both;
+    padding-top:5px;
+    }
